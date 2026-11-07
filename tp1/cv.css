@@ -1,0 +1,194 @@
+
+/* =================================
+   TP1 - CV CELIA AMRANE
+   Feuille de style principale
+================================= */
+
+/* 1. Variables de couleurs */
+:root {
+    --bleu-nuit: #172554;
+    --bleu: #2563eb;
+    --bleu-clair: #dbeafe;
+    --fond: #f8fafc;
+    --blanc: #ffffff;
+    --texte: #1e293b;
+}
+
+/* 2. Réinitialisation */
+* {
+    box-sizing: border-box;
+}
+
+/* 3. Style général */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--fond);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: var(--texte);
+    line-height: 1.6;
+}
+
+/* 4. Conteneur principal */
+.cv-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: var(--blanc);
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* 5. Liens */
+a {
+    color: var(--bleu);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--bleu-nuit);
+}
+
+/* 6. Navigation */
+nav {
+    margin-bottom: 10px;
+}
+
+/* 7. En-tête du CV */
+header {
+    text-align: center;
+    padding: 35px 25px;
+    background: linear-gradient(135deg, #dbeafe, #ffffff);
+    border-radius: 10px;
+    border-bottom: 3px solid var(--bleu);
+}
+
+/* 8. Titre principal */
+header h1 {
+    color: var(--bleu-nuit);
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+/* 9. Sous-titre */
+header h2 {
+    color: var(--bleu);
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+/* 10. Catégories */
+section {
+    margin-top: 30px;
+}
+
+section h1 {
+    color: var(--bleu-nuit);
+    font-size: 22px;
+    border-bottom: 2px solid var(--bleu);
+    padding-bottom: 8px;
+}
+
+/* 11. Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--blanc);
+    margin: 15px 0;
+}
+
+td, th {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+}
+
+/* Lignes impaires */
+tr:nth-child(odd) {
+    background-color: #eff6ff;
+}
+
+/* Survol des lignes */
+tr:hover {
+    background-color: #dbeafe;
+    transition: background-color 0.3s ease;
+}
+
+/* 12. Images */
+img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+/* Logo Institut Galilée */
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Adaptation aux petits écrans */
+@media only screen and (max-width: 600px) {
+
+    body {
+        background: radial-gradient(
+            circle,
+            rgba(63, 94, 251, 1) 0%,
+            rgba(252, 70, 107, 1) 100%
+        );
+    }
+
+    .cv-container {
+        width: 96%;
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    header {
+        padding: 20px 12px;
+    }
+
+    header h1 {
+        font-size: 27px;
+        overflow-wrap: anywhere;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    section {
+        margin-top: 25px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    td {
+        padding: 7px;
+        overflow-wrap: anywhere;
+    }
+}
+

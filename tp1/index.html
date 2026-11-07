@@ -1,41 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>TP1</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <!-- Place favicon.ico in the root directory -->
+  <title>CV - Célia Amrane</title>
 
-  <style>
-    body {
-      background-color: #e9ebee;
-      font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-      font-size: 16px;
-      margin: 0 auto;
-      max-width: 800px;
-    }
-  </style>
-
-  <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-  <!--<link rel="stylesheet" href="style.css">-->
-  <!--<script src="main.js"></script>-->
+  <!-- Liaison avec notre fichier CSS -->
+  <link rel="stylesheet" href="cv.css">
 </head>
 
 <body>
-  <nav>
-    <a href="..">🏠 Index</a> / TP1
-  </nav>
-  <h1>TP 1</h1>
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <img src="../galilee.png" alt="Logo Galilee" />
+  <div class="cv-container">
+    <nav>
+      <a href="../index.html">🏠 Accueil</a>
+      / CV
+    </nav>
 
-  <h2><a href="experiences/index.html">Expériences</a></h2>
+    <header>
+      <img src="../logo_institut_galilee_1.jpg" alt="Logo Institut Galilée" class="logo">
+      <h1>CÉLIA AMRANE</h1>
+
+      <h2>Étudiante en Master 2 Réseaux</h2>
+
+      <p>Recherche d'un stage en réseaux et infrastructures</p>
+
+      <p>
+        celiaamrane@gmail.com |
+        +33 6 16 38 85 91 |
+        Île-de-France
+      </p>
+    </header>
+
+    <main>
+
+      <!-- PROFIL -->
+      <section>
+        <h1>Profil</h1>
+
+        <table width="100%" border="1">
+          <tr>
+            <td>
+              Étudiante en Master 2 Ingénierie et Innovation
+              en Images et Réseaux, parcours Réseaux,
+              à l'Institut Galilée.
+              Passionnée par les réseaux informatiques,
+              la cybersécurité et les infrastructures numériques.
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- COMPETENCES -->
+      <section>
+        <h1>Compétences techniques</h1>
+
+        <table width="100%" border="1">
+          <tr>
+            <td>Réseaux</td>
+            <td>TCP/IP, LAN, WAN, Wi-Fi, DNS, DHCP</td>
+          </tr>
+
+          <tr>
+            <td>Systèmes</td>
+            <td>Linux, Windows</td>
+          </tr>
+
+          <tr>
+            <td>Programmation</td>
+            <td>Python, Java, HTML, CSS</td>
+          </tr>
+
+          <tr>
+            <td>Outils</td>
+            <td>Wireshark, Git, GitHub</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- PROJETS -->
+      <section>
+        <h1>Projets</h1>
+
+        <table width="100%" border="1">
+          <tr>
+            <td>Agent de détection d'anomalies réseau</td>
+            <td>Python, Wireshark, Scapy, SQLite</td>
+          </tr>
+
+          <tr>
+            <td>IoT connecté de détection de chute</td>
+            <td>ESP32, C++, MQTT, I2C</td>
+          </tr>
+
+          <tr>
+            <td>Projet de fin d'études</td>
+            <td>Arduino, Python, Wi-Fi</td>
+          </tr>
+
+          <tr>
+            <td>Application mobile Bluetooth</td>
+            <td>Flutter, Bluetooth, Android</td>
+          </tr>
+
+          <tr>
+            <td>Site web — Association écologique</td>
+            <td>HTML, CSS, PHP</td>
+          </tr>
+        </table>
+
+        <p>
+          <a href="experiences/index.html">
+            Voir les expériences et projets détaillés
+          </a>
+        </p>
+      </section>
+
+      <!-- FORMATION -->
+      <section>
+        <h1>Formation</h1>
+
+        <table width="100%" border="1">
+          <tr>
+            <td>2026-2027</td>
+            <td>Master 2 — Ingénierie et Innovation en Images et Réseaux</td>
+          </tr>
+
+          <tr>
+            <td>2025-2026</td>
+            <td>Master 1 — Management de la Cybersécurité</td>
+          </tr>
+
+          <tr>
+            <td>2023-2025</td>
+            <td>Master — Réseaux, Mobilité et Systèmes Embarqués</td>
+          </tr>
+
+          <tr>
+            <td>2022-2023</td>
+            <td>Licence — Systèmes d'Information</td>
+          </tr>
+        </table>
+
+        <p>
+          <a href="formations.html">
+            Voir le détail de mes formations
+          </a>
+        </p>
+      </section>
+
+      <!-- LANGUES -->
+      <section>
+        <h1>Langues</h1>
+
+        <table width="100%" border="1">
+          <tr>
+            <td>Français</td>
+            <td>C2</td>
+          </tr>
+
+          <tr>
+            <td>Anglais</td>
+            <td>B2</td>
+          </tr>
+
+          <tr>
+            <td>Arabe</td>
+            <td>C1</td>
+          </tr>
+        </table>
+      </section>
+
+    </main>
+  </div>
 </body>
 
 </html>
