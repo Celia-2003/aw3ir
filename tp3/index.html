@@ -21,19 +21,118 @@
         }
     </style>
 
-    <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-    <!--<link rel="stylesheet" href="style.css">-->
-    <!--<script src="main.js"></script>-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.bundle.js" defer></script>
 </head>
 
 <body>
-    <nav>
+    <!-- Lien de retour vers l'index -->
+    <nav class="container mt-3">
         <a href="..">🏠 Index</a> / TP3
     </nav>
-    <h1>tp3</h1>
-    <!-- Add your site or application content here -->
-    <p>Hello world! This is HTML5 Boilerplate.</p>
-    <img src="../galilee.png" alt="Logo Galilee" />
+
+    <div class="container mt-4">
+
+        <!-- Logo de l'Institut Galilée -->
+        <div class="text-center mb-3">
+            <img src="../galilee.png" alt="Logo Institut Galilée" style="width: 100px;">
+        </div>
+
+        <!-- Titre du TP -->
+        <h1>TP AW</h1>
+        <p>Avec Bootstrap 5</p>
+
+        <!-- Formulaire -->
+        <form id="formulaire">
+
+            <!-- Champ Nom -->
+            <div class="row mb-3">
+                <label for="name" class="col-sm-3 col-form-label">Nom</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="name">
+                </div>
+            </div>
+
+            <!-- Champ Prénom -->
+            <div class="row mb-3">
+                <label for="firstname" class="col-sm-3 col-form-label">Prénom</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="firstname">
+                </div>
+            </div>
+
+            <!-- Champ Date de naissance -->
+            <div class="row mb-3">
+                <label for="birthday" class="col-sm-3 col-form-label">Date de naissance</label>
+                <div class="col-sm-9">
+                    <input type="date" class="form-control" id="birthday">
+                </div>
+            </div>
+
+            <!-- Champ Adresse -->
+            <div class="row mb-3">
+                <label for="address" class="col-sm-3 col-form-label">Adresse</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="address">
+                </div>
+            </div>
+
+            <!-- Champ Email -->
+            <div class="row mb-3">
+                <label for="email" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" id="email">
+                </div>
+            </div>
+
+            <!-- Bouton Valider -->
+            <div class="row mb-3">
+                <div class="col-sm-9 offset-sm-3">
+                    <button type="submit" class="btn btn-primary">Valider</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <!-- Script de validation du formulaire -->
+    <script src="js/form-validation.js"></script>
+
+
+    <!-- Fenêtre modale Bootstrap -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- En-tête de la fenêtre -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Message
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Contenu de la fenêtre -->
+                <div class="modal-body">
+                    Message de la fenêtre modale
+                </div>
+
+                <!-- Pied de la fenêtre -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                        OK
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
